@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  text-decoration: inherit;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.myborder {
+  border: 1px solid red;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+textarea, 
+input[type='number'],
+input[type='text'] {
+  @apply text-2xl rounded-sm border-indigo-300 border-2 px-3 py-2.5 w-full
+}
+
+/* Utility Classes */
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+.flex-start {
+  @apply flex justify-start items-center;
+}
+.flex-col-end {
+  @apply flex flex-col justify-end items-end;
+}
+.flex-between {
+  @apply flex justify-between items-center;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 148px);
+}
+
+/* Buttons */
+
+.button-primary {
+  @apply text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:ring-indigo-300 font-medium rounded-sm text-sm px-5 py-2.5
+}
+.button-secondary {
+  @apply text-indigo-900 border border-indigo-700 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-sm text-sm px-5 py-2.5
+}

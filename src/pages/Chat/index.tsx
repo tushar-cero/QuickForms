@@ -26,36 +26,6 @@ const questionJson = [
     question: 'Please upload any relevant files.',
     type: TFormInput.UPLOAD,
     customAttributes: {}
-  },
-  {
-    id: 'd4e5f6a7-b8c9-0123-4567-890abcdef123',
-    question: 'Please provide any additional comments or suggestions.',
-    type: TFormInput.LONG,
-    customAttributes: {}
-  },
-  {
-    id: 'e5f6a7b8-c9d0-1234-5678-abcdef12345',
-    question: 'What is your name?',
-    type: TFormInput.SHORT,
-    customAttributes: {}
-  },
-  {
-    id: 'f6a7b8c9-d0e1-2345-6789-abcdef123456',
-    question: 'How many times have you used our product?',
-    type: TFormInput.NUMBER,
-    customAttributes: {
-      lowerRange: 0,
-      upperRange: 100
-    }
-  },
-  {
-    id: 'a7b8c9d0-e1f2-3456-7890-abcdef1234567',
-    question: 'When did you first use our product?',
-    type: TFormInput.DATE,
-    customAttributes: {
-      lowerRange: '2020-01-01',
-      upperRange: '2024-12-31'
-    }
   }
 ];
 

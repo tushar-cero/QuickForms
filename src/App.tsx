@@ -1,7 +1,7 @@
-import { Chat } from './pages/Chat';
+import { ViewFormWrapper } from './pages/ViewForm';
 
 const App = () => {
-  return <Chat />;
+  return <ViewFormWrapper />;
 };
 
 export default App;

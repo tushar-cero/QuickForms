@@ -1,7 +1,8 @@
-import { ViewFormWrapper } from './pages/ViewForm';
+import { memo } from 'react';
+import { AppRoutes } from './utils/routes';
 
-const App = () => {
-  return <ViewFormWrapper />;
-};
+const App = memo(() => {
+  return <AppRoutes />;
+});
 
 export default App;

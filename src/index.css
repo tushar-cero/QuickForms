@@ -50,6 +50,10 @@ input[type='text'] {
   height: calc(100vh - 148px);
 }
 
+.ts-box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
 /* Buttons */
 
 .button-primary {
@@ -62,4 +66,31 @@ input[type='text'] {
 
 .button-secondary {
   @apply text-indigo-900 border border-indigo-700 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-sm text-sm px-5 py-2.5
+}
+
+/* Custom CSS */
+
+.form-block {
+  @apply flex flex-col gap-6 p-6 rounded-md h-min
+}
+.form-block-custom {
+  width: calc((100% - 48px) / 4);
+}
+
+@media (max-width: 1280px) {
+  .form-block-custom {
+    width: calc((100% - 32px) / 3);
+  }
+}
+
+@media (max-width: 986px) {
+  .form-block-custom {
+    width: calc((100% - 16px) / 2);
+  }
+}
+
+@media (max-width: 640px) {
+  .form-block-custom {
+    width: 100%;
+  }
 }

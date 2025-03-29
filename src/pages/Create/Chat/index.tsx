@@ -1,0 +1,25 @@
+import React, { memo } from 'react';
+
+export const Chat = memo(() => {
+  return (
+    <>
+      <div className="flex-between w-full mb-4">
+        <div>Breadcrumbs</div>
+        <button className="button-primary">New Form</button>
+      </div>
+      <div className="w-full flex flex-wrap gap-4">
+        <div aria-label="form-block" className="form-block form-block-custom ts-box-shadow">
+          <div className="text-xl font-medium">Office Feedback Form</div>
+          <div className="flex-between w-full">
+            <div className="text-md">12/06/2025</div>
+            <div className="text-xs py-1.5 px-2 rounded-sm bg-green-200 text-green-950 font-semibold">PUBLISHED</div>
+          </div>
+          <div className="flex-between w-full">
+            <button>View</button>
+            <button>Settings</button>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+});

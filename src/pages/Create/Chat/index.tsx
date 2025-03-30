@@ -1,4 +1,5 @@
 import React, { memo } from 'react';
+import { DynamicIcon } from '../../../utils/Icons';
 
 export const Chat = memo(() => {
   return (
@@ -11,12 +12,21 @@ export const Chat = memo(() => {
         <div aria-label="form-block" className="form-block form-block-custom ts-box-shadow">
           <div className="text-xl font-medium">Office Feedback Form</div>
           <div className="flex-between w-full">
-            <div className="text-md">12/06/2025</div>
+            <div className="flex flex-col gap-0">
+              <span className="text-xs text-zinc-500">Last Updated</span>
+              <span className="text-sm font-medium">12/06/2025</span>
+            </div>
             <div className="text-xs py-1.5 px-2 rounded-sm bg-green-200 text-green-950 font-semibold">PUBLISHED</div>
           </div>
           <div className="flex-between w-full">
-            <button>View</button>
-            <button>Settings</button>
+            <button className="flex-center gap-2">
+              <DynamicIcon name="EyeIcon" />
+              View
+            </button>
+            <button className="flex-center gap-2">
+              <DynamicIcon name="SettingsIcon" />
+              Settings
+            </button>
           </div>
         </div>
       </div>

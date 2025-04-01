@@ -23,9 +23,9 @@ input[type='checkbox'] {
   cursor: pointer;
 }
 
-textarea, 
-input[type='number'],
-input[type='text'] {
+.textarea-input, 
+.text-input,
+.number-input {
   @apply text-2xl rounded-sm border-indigo-300 border-2 px-3 py-2.5 w-full
 }
 
@@ -69,6 +69,14 @@ input[type='text'] {
 }
 
 /* Custom CSS */
+
+.gradient-text {
+  color: #7319fa;
+  background-image: -webkit-linear-gradient(45deg, #7319fa, #ff33b4, #ff7e29);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .form-block {
   @apply flex flex-col gap-6 p-6 rounded-md h-min
